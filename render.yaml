@@ -8,6 +8,7 @@ services:
     rootDir: src
     buildCommand: npm install
     startCommand: npm start
+    plan: free
 
     envVars:
       - key: DATABASE_URL
@@ -17,3 +18,7 @@ services:
 
 databases:
   - name: database
+    databaseName: db
+    user: root
+    region: frankfurt
+    plan: free
