@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: node_app
+    runtime: node
+    repo: https://github.com/melyLaur/deploy_node_app.git
+    region: frankfurt
+    branch: master
+    rootDir: src
+    buildCommand: npm install
+    startCommand: npm start
+
+  fromDatabase:
+    name: database
+    property: connectionString
+
+  databases:
+  - name: database
+    databaseName: mydb
