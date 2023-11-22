@@ -9,10 +9,9 @@ services:
     buildCommand: npm install
     startCommand: npm start
 
-  fromDatabase:
-    name: database
-    property: connectionString
+    fromDatabase:
+      name: database
+      property: connectionString
 
-  databases:
+databases:
   - name: database
-    databaseName: mydb
