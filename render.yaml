@@ -5,7 +5,6 @@ services:
     repo: https://github.com/melyLaur/deploy_node_app.git
     region: frankfurt
     branch: master
-    rootDir: src
     buildCommand: npm install
     startCommand: npm start
     plan: free
